@@ -1,7 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Directive, Inject, Input } from '@angular/core';
 import { WizardCompletionStep } from '../util/wizard-completion-step.interface';
 import { WizardStep } from '../util/wizard-step.interface';
-import { WizardComponent } from './wizard.component';
+import { WizardBase } from '../util/wizard.interface';
 
 /**
  * The `aw-wizard-navigation-bar` component contains the navigation bar inside a [[WizardComponent]].
@@ -26,7 +26,7 @@ export class WizardNavigationBarComponent {
    *
    * @param wizard The state the wizard currently resides in
    */
-  constructor(public wizard: WizardComponent) {
+  constructor(public wizard: WizardBase) {
   }
 
   /**

@@ -1,10 +1,10 @@
-import { Directive, EventEmitter, HostListener, Input, Optional, Output } from '@angular/core';
-import { NavigationMode } from '../navigation/navigation-mode.interface';
+import { Directive, EventEmitter, HostListener, Inject, InjectionToken, Input, Optional, Output } from '@angular/core';
 import { isStepId, StepId } from '../util/step-id.interface';
 import { isStepIndex, StepIndex } from '../util/step-index.interface';
 import { isStepOffset, StepOffset } from '../util/step-offset.interface';
 import { WizardStep } from '../util/wizard-step.interface';
-import { WizardComponent } from '../components/wizard.component';
+import { WizardBase } from '../util/wizard.interface';
+
 
 /**
  * The `awGoToStep` directive can be used to navigate to a given step.
@@ -70,7 +70,7 @@ export class GoToStepDirective {
    * @param wizard The wizard component
    * @param wizardStep The wizard step, which contains this [[GoToStepDirective]]
    */
-  constructor(private wizard: WizardComponent, @Optional() private wizardStep: WizardStep) {
+  constructor(private wizard: WizardBase, @Optional() private wizardStep: WizardStep) {
   }
 
   /**

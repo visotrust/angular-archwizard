@@ -5,12 +5,13 @@ import {
   HostBinding,
   Input,
   QueryList,
-  EventEmitter,
+  EventEmitter
 } from '@angular/core';
 import {NavigationMode} from '../navigation/navigation-mode.interface';
 import {WizardStep} from '../util/wizard-step.interface';
 import {MovingDirection} from '../util/moving-direction.enum';
 import {ConfigurableNavigationMode} from '../navigation/configurable-navigation-mode';
+import { WizardBase } from '../util/wizard.interface';
 
 /**
  * The `aw-wizard` component defines the root component of a wizard.
@@ -50,8 +51,11 @@ import {ConfigurableNavigationMode} from '../navigation/configurable-navigation-
 @Component({
   selector: 'aw-wizard',
   templateUrl: 'wizard.component.html',
+  providers: [
+    { provide: WizardBase, useExisting: WizardComponent }
+  ]
 })
-export class WizardComponent implements AfterContentInit {
+export class WizardComponent implements WizardBase, AfterContentInit {
   /**
    * A QueryList containing all [[WizardStep]]s inside this wizard
    */
