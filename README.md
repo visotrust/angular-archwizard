@@ -69,7 +69,7 @@ export class Module { }
 To allow customization, `@achimha/angular-archwizard` bundles CSS styles separately. If you are using Angular CLI, import them into your `styles.css`...
 
 ```css
-@import '../node_modules/@achimha/angular-archwizard/styles/archwizard.css';
+@import '@achimha/angular-archwizard/styles/archwizard.css';
 ```
 
 ...or include them into `angular.json`:
@@ -78,14 +78,14 @@ To allow customization, `@achimha/angular-archwizard` bundles CSS styles separat
 {
   // ...
   "styles": [
-    "node_modules/@achimha/angular-archwizard/styles/archwizard.css",
+    "@achimha/angular-archwizard/styles/archwizard.css",
     "src/styles.css"
   ]
   // ...
 }
 ```
 
-If you are using SCSS, you can include the styles in the form of a `.scss` file: `node_modules/@achimha/angular-archwizard/styles/archwizard.scss`.
+If you are using SCSS, you can include the styles in the form of a `.scss` file: `@achimha/angular-archwizard/styles/archwizard.scss`.
 This way you can easily customize wizard's appearance by tweaking SCSS variables as described in [Styles Customization](#styles-customization).
 
 ## How to use the wizard
