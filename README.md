@@ -1,29 +1,24 @@
-# Overview @achimha/angular-archwizard
+# Overview @viso-trust/angular-archwizard
 
-[![Build Status](https://github.com/@achimha/angular-archwizard/actions/workflows/build.yml/badge.svg?branch=develop)](https://github.com/@achimha/angular-archwizard/actions)
-[![Dependency Status](https://david-dm.org/@achimha/angular-archwizard.svg)](https://david-dm.org/@achimha/angular-archwizard)
-[![Dev-Dependency Status](https://david-dm.org/@achimha/angular-archwizard/dev-status.svg)](https://david-dm.org/@achimha/angular-archwizard?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/039c5be36d8646dfb73972e8679e5021)](https://www.codacy.com/app/marc.arndt/@achimha/angular-archwizard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=@achimha/angular-archwizard&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/039c5be36d8646dfb73972e8679e5021)](https://www.codacy.com/app/marc.arndt/@achimha/angular-archwizard?utm_source=github.com&utm_medium=referral&utm_content=@achimha/angular-archwizard&utm_campaign=Badge_Coverage)
-[![NPM Version](https://img.shields.io/npm/v/@achimha/angular-archwizard.svg)](https://www.npmjs.com/package/@achimha/angular-archwizard)
+[![NPM Version](https://img.shields.io/npm/v/@viso-trust/angular-archwizard.svg)](https://www.npmjs.com/package/@viso-trust/angular-archwizard)
 
-This project contains a functional module with a wizard component and some supportive components and directives for [Angular](https://angular.io/) version 9 or later.
+This project contains a functional module with a wizard component and some supportive components and directives for [Angular](https://angular.io/) version 9 or later. Forked from https://github.com/achimha/angular-archwizard to enable support for Angular 16. Achimha's repo is itself a fork of https://github.com/madoar/angular-archwizard.
 
 ## Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `yarn build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
-Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Compatibility
 
-Latest `@achimha/angular-archwizard` is compatible with Angular 9+.
-Older versions of `@achimha/angular-archwizard` can be used together with older versions of Angular.
-The following table shows which version of `@achimha/angular-archwizard` has been built with which Angular version:
+Latest `@viso-trust/angular-archwizard` is compatible with Angular 9+.
+Older versions of `@viso-trust/angular-archwizard` can be used together with older versions of Angular.
+The following table shows which version of `@viso-trust/angular-archwizard` has been built with which Angular version:
 
-| `@achimha/angular-archwizard` version | Angular version |
+| `@viso-trust/angular-archwizard` version | Angular version |
 |------------------------------|-----------------|
 | `3.0.0`                      | Angular 5       |
 | `4.0.0`                      | Angular 7       |
@@ -33,28 +28,22 @@ The following table shows which version of `@achimha/angular-archwizard` has bee
 | `14.0.0`                     | Angular 14      |
 | `16.0.0`                     | Angular 16      |
 
-## Gitpod
-
-`@achimha/angular-archwizard` can be developed with Gitpod, a free one-click online IDE for GitHub:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/@achimha/angular-archwizard)
-
 ## Installation
 
-### Step 1: Install `@achimha/angular-archwizard`
+### Step 1: Install `@viso-trust/angular-archwizard`
 
-`@achimha/angular-archwizard` is available as a NPM package. To install `@achimha/angular-archwizard` in your project directory run:
+`@viso-trust/angular-archwizard` is available as a NPM package. To install `@viso-trust/angular-archwizard` in your project directory run:
 
 ```bash
-npm install --save @achimha/angular-archwizard
+yarn --save @viso-trust/angular-archwizard
 ```
 
 ### Step 2: Import the ArchwizardModule
 
-After installation you can import `@achimha/angular-archwizard` into your Angular project by adding the `ArchwizardModule` to your module declaration as follows:
+After installation you can import `@viso-trust/angular-archwizard` into your Angular project by adding the `ArchwizardModule` to your module declaration as follows:
 
 ```typescript
-import { ArchwizardModule } from '@achimha/angular-archwizard';
+import { ArchwizardModule } from '@viso-trust/angular-archwizard';
 
 @NgModule({
   imports: [
@@ -66,10 +55,10 @@ export class Module { }
 
 ### Step 3: Include styles
 
-To allow customization, `@achimha/angular-archwizard` bundles CSS styles separately. If you are using Angular CLI, import them into your `styles.css`...
+To allow customization, `@viso-trust/angular-archwizard` bundles CSS styles separately. If you are using Angular CLI, import them into your `styles.css`...
 
 ```css
-@import '@achimha/angular-archwizard/styles/archwizard.css';
+@import '@viso-trust/angular-archwizard/styles/archwizard.css';
 ```
 
 ...or include them into `angular.json`:
@@ -78,14 +67,14 @@ To allow customization, `@achimha/angular-archwizard` bundles CSS styles separat
 {
   // ...
   "styles": [
-    "@achimha/angular-archwizard/styles/archwizard.css",
+    "@viso-trust/angular-archwizard/styles/archwizard.css",
     "src/styles.css"
   ]
   // ...
 }
 ```
 
-If you are using SCSS, you can include the styles in the form of a `.scss` file: `@achimha/angular-archwizard/styles/archwizard.scss`.
+If you are using SCSS, you can include the styles in the form of a `.scss` file: `@viso-trust/angular-archwizard/styles/archwizard.scss`.
 This way you can easily customize wizard's appearance by tweaking SCSS variables as described in [Styles Customization](#styles-customization).
 
 ## How to use the wizard
@@ -117,7 +106,7 @@ To use this wizard component in an angular project simply add a `aw-wizard` comp
 ### \<aw-wizard\>
 
 The `<aw-wizard>` environment is the environment in which you define the steps belonging to your wizard.
-In addition to the contained wizard steps, `@achimha/angular-archwizard` enables you to define the location and the layout of the navigation bar inside your wizard.
+In addition to the contained wizard steps, `@viso-trust/angular-archwizard` enables you to define the location and the layout of the navigation bar inside your wizard.
 To set the location, the layout of the navigation bar and many other settings, you can pass the following parameters to the `aw-wizard` component:
 
 #### \[navBarLocation\]
@@ -174,7 +163,7 @@ Possible `<aw-wizard>` parameters:
 
 ### \<aw-wizard-step\>
 
-`@achimha/angular-archwizard` contains two ways to define a wizard step.
+`@viso-trust/angular-archwizard` contains two ways to define a wizard step.
 One of these two ways is by using the `<aw-wizard-step>` component.
 
 #### \[stepId\]
@@ -191,7 +180,7 @@ To set the title of a step, add the `stepTitle` input attribute, with the choose
 #### \[navigationSymbol\]
 
 Sometimes it's useful to add a symbol in the center of the circle in the navigation bar, which belongs to the step.
-`@achimha/angular-archwizard` supports this through the `[navigationSymbol]` input attribute of the wizard step.
+`@viso-trust/angular-archwizard` supports this through the `[navigationSymbol]` input attribute of the wizard step.
 
 Be aware, that not all layouts display the symbols.
 Only the layouts `large-filled-symbols` and `large-empty-symbols` display the symbols!
@@ -301,7 +290,7 @@ Possible `<aw-wizard-completion-step>` parameters:
 
 ### \[awNavigationMode\]
 
-By default `@achimha/angular-archwizard` operates in a "strict" navigation mode.
+By default `@viso-trust/angular-archwizard` operates in a "strict" navigation mode.
 It requires users to navigate through the wizard steps in a linear fashion, where they can only enter the next step if all previous steps have been completed and the exit condition of the current step have been fulfilled.
 The only exception to this rule are optional steps, which a user can skip.
 Using the navigation bar, the user can navigate back to steps they already visited.
@@ -329,7 +318,7 @@ Example usage:
 custom-navigation-mode.ts:
 
 ```typescript
-import { NavigationMode } from '@achimha/angular-archwizard'
+import { NavigationMode } from '@viso-trust/angular-archwizard'
 
 class CustomNavigationMode implements NavigationMode {
 
@@ -357,11 +346,11 @@ my.component.html:
 </aw-wizard>
 ```
 
-Instead of implementing the `NavigationMode` interface from scratch, you can extend one of the classes provided by `@achimha/angular-archwizard`:
+Instead of implementing the `NavigationMode` interface from scratch, you can extend one of the classes provided by `@viso-trust/angular-archwizard`:
 
 - `BaseNavigationMode`: This class contains an abstract method called `isNavigable`, which you will have to override to define wizard's behavior towards navigation using the navigation bar.
 
-- `ConfigurableNavigationMode`: This class defines the default navigation mode used by `@achimha/angular-archwizard`.
+- `ConfigurableNavigationMode`: This class defines the default navigation mode used by `@viso-trust/angular-archwizard`.
     In some cases, it might be more convenient to base your custom implementation on it.
 
 This way of customizing the wizard is advanced, so be prepared to refer to documentation comments and source code for help.
@@ -509,7 +498,7 @@ which is shown directly after the wizard startup.
 
 ### \[awGoToStep\]
 
-`@achimha/angular-archwizard` has three directives, which allow moving between steps.
+`@viso-trust/angular-archwizard` has three directives, which allow moving between steps.
 These directives are the `awPreviousStep`, `asNextStep` and `awGoToStep` directives.
 
 The `awGoToStep` directive needs to receive an input, which tells the wizard, to which step it should navigate,
@@ -779,9 +768,9 @@ When removing a step be sure to not remove the step the wizard is currently disp
 
 If you are using SCSS, you can customize the wizard's global styles and color theme using SCSS variables:
 
-1. Import `node_modules/@achimha/angular-archwizard/styles/archwizard.scss` into your `styles.scss` file as described in the [Installation](#installation) section.
+1. Import `node_modules/@viso-trust/angular-archwizard/styles/archwizard.scss` into your `styles.scss` file as described in the [Installation](#installation) section.
 
-2. Re-define any of the variables you can find at the top of `node_modules/@achimha/angular-archwizard/styles/variables.scss`.
+2. Re-define any of the variables you can find at the top of `node_modules/@viso-trust/angular-archwizard/styles/variables.scss`.
 
 In the following example, we configure a simple color theme which only defines styles for two step states: 'default' and 'current'.
 
@@ -809,14 +798,14 @@ $aw-colors: (
   )
 );
 
-@import '../node_modules/@achimha/angular-archwizard/styles/archwizard.scss';
+@import '../node_modules/@viso-trust/angular-archwizard/styles/archwizard.scss';
 ```
 
-Please don't hesitate to look inside `node_modules/@achimha/angular-archwizard/styles/variables.scss` for documentation
+Please don't hesitate to look inside `node_modules/@viso-trust/angular-archwizard/styles/variables.scss` for documentation
 on the `$aw-colors` variable and other variables you can tweak to tune the wizard to your needs.
 
 ## Example
 
-You can find an basic example project using `@achimha/angular-archwizard` [here](https://madoar.github.io/@achimha/angular-archwizard-demo).
-The sources for the example can be found in the [@achimha/angular-archwizard-demo](https://github.com/@achimha/angular-archwizard-demo) repository.
+You can find an basic example project using `@viso-trust/angular-archwizard` [here](https://madoar.github.io/@viso-trust/angular-archwizard-demo).
+The sources for the example can be found in the [@viso-trust/angular-archwizard-demo](https://github.com/@visotrust/angular-archwizard-demo) repository.
 It illustrates how the wizard looks like and how the different settings can change its layout and behavior.

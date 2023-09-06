@@ -1,9 +1,9 @@
 {
-  "name": "@achimha/angular-archwizard",
+  "name": "@viso-trust/angular-archwizard",
   "version": "16.0.0",
   "license": "MIT",
   "description": "An Angular 14+ module containing a wizard component and its supporting components and directives",
-  "homepage": "https://github.com/achimha/angular-archwizard",
+  "homepage": "https://github.com/visotrust/angular-archwizard",
   "author": {
     "name": "Marc Arndt",
     "email": "marc.arndt@masimi.de"
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/achimha/angular-archwizard"
+    "url": "https://github.com/visotrust/angular-archwizard"
   },
   "bugs": {
-    "url": "https://github.com/achimha/angular-archwizard/issues"
+    "url": "https://github.com/visotrust/angular-archwizard/issues"
   },
   "keywords": [
     "angular",
