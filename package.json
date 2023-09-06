@@ -1,6 +1,6 @@
 {
   "name": "@viso-trust/angular-archwizard",
-  "version": "16.0.0",
+  "version": "16.0.2",
   "license": "MIT",
   "description": "An Angular 14+ module containing a wizard component and its supporting components and directives",
   "homepage": "https://github.com/visotrust/angular-archwizard",
@@ -50,8 +50,7 @@
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "publish": "npm publish dist --access public"
+    "e2e": "ng e2e"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.8",
